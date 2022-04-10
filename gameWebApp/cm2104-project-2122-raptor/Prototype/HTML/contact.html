@@ -1,0 +1,136 @@
+<head>
+
+
+    <!-- Stylesheets -->
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/cadf1c7625.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="..//IMG/titleLogo.png" type="image/x-icon">
+    <title>Contact Us: GameSphere</title>
+
+    <!-- Inner CSS for Contact Us page -->
+    <style>
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: lightskyblue;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            opacity: 0.8;
+            transition: all 0.3s ease 0s;
+        }
+        
+        .container {
+            border-radius: 5px;
+            background-color: rgba(20, 80, 139, 0.993);
+            padding: 20px;
+            color: black;
+        }
+        
+        input[type=reset] {
+            background-color: lightskyblue;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=reset]:hover {
+            opacity: 0.8;
+            transition: all 0.3s ease 0s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <!-- Logo -->
+        <a class="padding" href="home.html">
+            <img class="logo" src="../IMG/logo_black.png" alt="GameSphere Logo" height="50px">
+        </a>
+
+        <!-- Navbar -->
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="mylist.html">My list</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <a href="login.html"><button class="login">Log In</button></a>
+
+    </header>
+   
+    <main>
+        
+        <!-- Main Content -->
+        <div class="container">
+
+            <form action="mailto:queries@gamesphere.com" method="post" enctype="text/plain">
+                <label for="fname">📛First Name and Last Name</label>
+                <input type="text" id="fname" name="Name: " placeholder="Your name...">
+
+                <label for="lname">📛E-mail</label>
+                <input type="text" id="lname" name="E-mail: " placeholder="Your e-mail...">
+
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="Query: " placeholder="Write your message here..." style="height:300px"></textarea>
+
+                <input type="submit" value="Submit" onclick="alertFunctionForContactUsPage()">
+
+    <!-- JS Function for Login button -->
+                <script>
+                    function alertFunctionForContactUsPage() {
+
+                        alert("Your e-mail application will now open!");
+                    }
+                </script>
+
+                <input type="reset" value="Reset">
+
+            </form>
+        </div>
+    </main>
+
+    <!--Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>GameSphere</h3>
+            <ul class="social">
+
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fa fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p> Designed and Developed by Raptor Team </p>
+            <br>
+            <p>copyright &copy;2021 GameSphere.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
